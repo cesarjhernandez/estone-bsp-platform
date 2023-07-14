@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="4" revision="dunfell"/>
+
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/Freescale"     name="freescale"/>
+  <remote fetch="https://git.openembedded.org"     name="oe"/>
+  <remote fetch="https://github.com/meta-qt5"      name="QT5"/>
+  <remote fetch="https://github.com/sbabic"        name="sbabic"/>
+  <remote fetch="https://github.com/cesarjhernandez"       name="estone"/>
+
+  <project remote="yocto"     revision="2a848e95074318f3a243df7b3f40513a13173a82" upstream="dunfell"   name="poky"                    path="sources/poky"/>
+  <project remote="yocto"     revision="12c3eed6a90b436565126d8ba6934f794b816e25" upstream="dunfell"   name="meta-freescale"          path="sources/meta-freescale"/>
+
+  <project remote="oe"        revision="7bd47ef6c98323c95a9e527129dca98c9a65ee08" upstream="dunfell"   name="meta-openembedded"       path="sources/meta-openembedded"/>
+
+  <project remote="oe"        revision="b901080cf57d9a7f5476ab4d96e56c30db8170a8" upstream="dunfell"   name="meta-python2"             path="sources/meta-python2"/>
+
+  <project remote="estone" revision="e445775d6997b8bd9d8d6c03cf74d00f6c5c348e" name="estone-bsp-base" path="sources/base">
+	<linkfile dest="README" src="README"/>
+	<linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+
+  <project remote="freescale" revision="537cb85e4db17d1f6b356a92112b32ae2e39b235" upstream="dunfell"   name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
+  <project remote="freescale" revision="5d882cdf079b3bde0bd9869ce3ca3db411acbf3b" upstream="dunfell"   name="meta-freescale-distro"   path="sources/meta-freescale-distro"/>
+  <project remote="freescale" revision="4558857539fd5395e9657500f84017e2722ba433" upstream="dunfell"   name="Documentation"           path="sources/Documentation"/>
+
+  <project remote="QT5"       revision="b4d24d70aca75791902df5cd59a4f4a54aa4a125" upstream="dunfell"   name="meta-qt5"                path="sources/meta-qt5"/>
+  <project remote="sbabic"    revision="72b493c7ed9f5e1fb4ae1ce180f913acc29748c5" upstream="dunfell"   name="meta-swupdate"           path="sources/meta-swupdate"/>
+  <project remote="yocto"     revision="758868633be479f38d19c3602be0094289fc1a75" upstream="dunfell"   name="meta-virtualization"     path="sources/meta-virtualization"/>
+  <project remote="estone" revision="4a01690d9f2286403a0d466bc8d314acdaddb046" upstream="dunfell"   name="meta-estone-fslc"     path="sources/meta-estone-fslc"/>
+
+</manifest>
